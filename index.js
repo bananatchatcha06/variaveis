@@ -1,39 +1,70 @@
+const prompt = require('prompt-sync');
+const entrada = prompt();
+
+const nomeCompleto = "Jennifer Gralik";
+const anoNascimento = 2006;
+let anoAtual = 2024;
+const idade = 18;
+
+console.log("Olá eu sou " + nomeCompleto + " estamos no ano de " + anoAtual + " minha idade é " + idade + ".");
+
+let AnoAtual = 2025;
+let Idade = 19;
 const NomeCompleto = "Jennifer Gralik";
-const AnoNascimento = 2006;
-let AnoAtual = 2024;
-let Idade = 18;
+const Faculdade = "Administração";
 
+console.log("Olá meu nome é " + NomeCompleto + ", tenho " + Idade + " anos " +  "estamos no ano de " + AnoAtual + " gostaria de fazer faculdade na área de " + Faculdade);
 
-console.log("Olá eu sou " + NomeCompleto + " estamos no ano " + AnoAtual + " minha idade é " + Idade + " e eu sou nascida no ano de " + AnoNascimento);
+console.log(`oi eu sou a ${nomeCompleto}, tenho ${idade} anos, nasci em ${anoNascimento}, e em ${AnoAtual} eu quero seguir na área de ${Faculdade}`);
 
-AnoAtual = AnoAtual + 1;
+const loginCerto = "Jennifer";
+const senhaCerta = 12345;
+console.log("-----------------------");
+console.log("--AGÊNCIAS DE VIAGENS--");
+console.log("-----------------------");
+console.log("Faça o seu login");
 
-console.log("Olá eu sou " + NomeCompleto + " estamos no ano " + AnoAtual + " minhaidade é " + Idade + " e irei cursar Administração ");
+var login = entrada("Digite o seu login: ");
+var senha = entrada("Digite a sua senha: ");
 
-console.log("Oi eu sou ${NomeCompleto} meu ano de nascimento ${AnoNascimento} minha idade é ${Idade}")
+while(login != loginCerto){
+  console.log("Login incorreto");
+  login = entrada("Digite o seu Login novamente: ");
 
-const ListaDeViagens = new Array(
-  " Singapura ",
-  " Seul ",
-  " Orlando ",
-  " Paris",
-  " Ottawa".
-  );
-
-console.log(ListaDeViagens);
-
-console.log(ListaDeViagens[4]);
-ListaDeViagens.push("Coronel Vivida");
-console.log(ListaDeViagens);
-
-ListaDeViagens.splice(1,2);
-console.log(ListaDeViagens);
-
-const IdadeComprador = 16;
-
-if(IdadeComprador < 18){
-  console.log("Poxa! infelizmente você é menor de idade, não podemos vender nossas passagens")
 }
-if(IdadeComprador >= 18){
-  console.log
+
+while(senha != senhaCerta){
+  console.log("senha incorreta");
+  senha = entrada("Digite a sua senha novamente: ");
 }
+
+const listaDeViagens = new Array(
+  `Japão`,
+  `Canadá`,
+  `Estados Unidos`,
+  `México`,
+  `Rússia`
+)
+
+console.log(listaDeViagens);
+
+console.log(listaDeViagens[4]);
+listaDeViagens.push("Campo Mourão");
+console.log(listaDeViagens);
+
+listaDeViagens.splice(1,2);
+console.log(listaDeViagens);
+var nomeComprador = entrada("qual é o seu nome? ");
+
+var idadeComprador = entrada("qual é a sua idade? ");
+
+if(idadeComprador < 18){
+  console.log("Não vendemos passagens para menores de 18 anos.");
+console.log(`Ja que sua idade é ${idadeComprador} infelizmente não podemos te vender as passagens`);
+}
+if(idadeComprador >= 18){
+   console.log("Compra realizada com sucesso.")
+  console.log(`Ja que sua idade é ${idadeComprador} podemos te vender a passagem parabens!`);
+}
+
+
