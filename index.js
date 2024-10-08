@@ -19,13 +19,18 @@ console.log(`oi eu sou a ${nomeCompleto}, tenho ${idade} anos, nasci em ${anoNas
 
 const loginCerto = "Jennifer";
 const senhaCerta = 12345;
-console.log("-----------------------");
-console.log("--AGÊNCIAS DE VIAGENS--");
-console.log("-----------------------");
-console.log("Faça o seu login");
+console.log("---------------------------------------------------------------------------------------");
+console.log("");
+console.log("                                   ❂  𝑨𝒈𝒆̂𝒏𝒄𝒊𝒂 𝒅𝒆 𝑽𝒊𝒂𝒈𝒆𝒏𝒔  ❂    ");
+console.log("                                      𝓢𝓮𝓳𝓪 𝓫𝓮𝓶-𝓿𝓲𝓷𝓭𝓸(𝓪)!"     );
+console.log("");
+console.log("---------------------------------------------------------------------------------------");
+console.log("");
+console.log("");
+console.log("❂ 𝑨́𝒓𝒆𝒂 𝒅𝒆 𝑳𝒐𝒈𝒊𝒏:");
 
-var login = entrada("Digite o seu login: ");
-var senha = entrada("Digite a sua senha: ");
+var login = entrada("↪︎ Digite o seu login: ");
+var senha = entrada("↪︎ Digite a sua senha: ");
 
 while(login != loginCerto){
   console.log("Login incorreto");
@@ -38,8 +43,14 @@ while(senha != senhaCerta){
   senha = entrada("Digite a sua senha novamente: ");
 }
 
+console.log("");
+console.log("");
+console.log("");
+console.log("❂ 𝑪𝒐𝒏𝒇𝒊𝒓𝒂 𝒂𝒔 𝒏𝒐𝒔𝒔𝒂𝒔 𝒐𝒑𝒄̧𝒐̃𝒆𝒔 𝒅𝒆 𝒅𝒆𝒔𝒕𝒊𝒏𝒐𝒔:");
+console.log("");
+
 const listaDeViagens = new Array(
-  `Japão`,
+  'Japão',
   `Canadá`,
   `Estados Unidos`,
   `México`,
